@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+//we are using connect to be able to access store somewhere in our app
 import './App.css';
 
+//we want access to the variable store somewhere else in our app
+//so we are using a second function connect 
 class App extends Component {
 	handleOnClick = event => {
 		this.props.increaseCount();
